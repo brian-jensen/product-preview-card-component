@@ -123,3 +123,43 @@ button {
 button svg {
   margin-right: 12px;
 }
+
+@media (min-width: 1440px) {
+  .card {
+    width: 600px;
+    display: flex;
+  }
+
+  .product-image-container {
+    height: 450px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    background: url(../images/image-product-desktop.jpg) center center / cover;
+  }
+
+  .product-image-container,
+  .card-text {
+    flex-basis: 50%;
+  }
+
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+
+  button {
+    width: 100%;
+    border-top: none;
+  }
+
+  button:hover {
+    background-color: var(--deep-aquamarine);
+    cursor: pointer;
+  }
+  
+}
